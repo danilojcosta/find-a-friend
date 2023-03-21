@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  color: #ffffff;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: #f15156;
+}
+
+/*HEADER*/
+
+.logo {
+  height: 3.2rem;
+  width: 12.5rem;
+  z-index: 100;
+}
+
+header {
+  background: #e44449;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+/*MENU*/
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1.2rem;
+  right: 2rem;
+  padding: 3px;
+  border: 0;
+  border-radius: 0.8rem;
+  background: white;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #e44449;
+  color: #ffffff;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #d4d0d0;
+}
+
+.menu a:hover {
+  color: #ffffff;
+}
+
+.menu a + a {
+  margin: 1rem;
+}
+
+.showMenu {
+  transform: translateY(0);
+  width: 36rem;
+  height: 23rem;
+  padding: 7.9rem 2.5rem 0;
+
+  border-radius: 0 0 2rem 2rem;
+}
+
+#line {
+  position: absolute;
+  width: 27.2rem;
+  height: 0px;
+
+  opacity: 0.2;
+  border: 1px solid #ffffff;
+}
+
+.showMenu li {
+  font-size: 18px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  margin-top: 2rem;
+}
+
+/*MAIN*/
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.friends {
+  height: 5.1rem;
+  width: 16.7rem;
+  margin: 5.2rem 2.1rem 3.5rem;
+}
+
+.friends-desktop {
+  margin: 0;
+  width: 0;
+  height: 0;
+}
+
+h1 {
+  margin: 0 2.1rem 5rem;
+  width: 28rem;
+  height: 14.4rem;
+
+  font-weight: 700;
+  font-size: 4.4rem;
+  line-height: 4.8rem;
+  color: #ffffff;
+}
+
+#label p {
+  color: #f15156;
+  margin: 0;
+}
+
+/*CARDS*/
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+#dog {
+  position: absolute;
+  top: 40rem;
+  width: 23.9rem;
+  height: 27.7rem;
+}
+
+#join {
+  position: absolute;
+  width: 23.9rem;
+  height: 5.5rem;
+  top: 60rem;
+  border: 0;
+
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+#join span {
+  font-weight: 800;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  text-align: center;
+
+  color: #0d3b66;
+}
+
+#card-primary {
+  width: 27.9rem;
+  height: 22.7rem;
+  margin-bottom: 4.8rem;
+
+  background: linear-gradient(153.09deg, #f36a6f 17.23%, #e44449 73.77%);
+  border-radius: 2rem;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+/*DESKTOP*/
+
+@media (min-width: 40em) {
+  main {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  header {
+    margin: 7rem 10.4rem 4.8rem 11.3rem;
+    padding: 0;
+    background-color: #f15156;
+  }
+
+  .logo {
+    width: 17.7rem;
+    height: 4.6rem;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 7.5rem;
+    left: 85rem;
+    width: 4.5rem;
+    border: 0;
+    border-radius: 0.8rem;
+    background: white;
+    cursor: pointer;
+  }
+
+  .showMenu {
+    position: absolute;
+    width: 48rem;
+    height: 34rem;
+    left: 80.5rem;
+    top: 3.9rem;
+    padding-left: 4.5rem;
+    padding-top: 15rem;
+    border-radius: 2rem;
+  }
+
+  .showMenu li {
+    font-size: 3rem;
+  }
+
+  #line {
+    display: none;
+  }
+
+  .friends {
+    margin: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .friends-desktop {
+    width: 29.9rem;
+    height: 3.4rem;
+    margin-left: 9.5rem;
+  }
+
+  h1 {
+    margin: 5rem 10.4rem 7.1rem 11.3rem;
+
+    width: 51.9rem;
+    height: 23.7rem;
+
+    font-weight: 700;
+    font-size: 7rem;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+  }
+
+  #label p {
+    width: 40.7rem;
+    height: 6.8rem;
+    margin: 0 0 5rem 12.2rem;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3.4rem;
+    color: #ffffff;
+  }
+
+  #join span {
+    font-size: 2rem;
+  }
+
+  #dog {
+    position: absolute;
+    width: 40.4rem;
+    height: 55.2rem;
+    left: 87.6rem;
+    top: 1rem;
+  }
+
+  #card-primary {
+    position: absolute;
+    width: 55rem;
+    height: 49rem;
+    left: 80.5rem;
+    top: 3.9rem;
+  }
+
+  #card-secondary {
+    position: absolute;
+    width: 55rem;
+    height: 13rem;
+    left: 80.5rem;
+    top: 54.9rem;
+
+    background: #e44449;
+    border-radius: 2rem;
+  }
+
+  #card-aside {
+    position: absolute;
+    width: 13.5rem;
+    height: 64.1rem;
+    left: 137.5rem;
+    top: 3.9rem;
+
+    margin-right: 0;
+    background: #e44449;
+    border-radius: 2rem 0 0 2rem;
+  }
+
+  #join {
+    position: absolute;
+    width: 49.2rem;
+    height: 7.2rem;
+    left: 83.5rem;
+    top: 57.9rem;
+    border: 0;
+
+    background: #ffffff;
+    border-radius: 8px;
+  }
+}

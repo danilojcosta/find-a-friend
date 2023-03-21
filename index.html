@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Find A Friend</title>
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="/assets/logo.svg"
+        alt="logotipo com um rosto de cachorro desenhado dentro de um circulo"
+      />
+
+    <ul class="menu">
+      <div id="line"></div>
+      <li><a class="menuItem" href="#">Home</a></li>
+      <li><a class="menuItem" href="#">Sobre o app</a></li>
+      <li><a class="menuItem" href="#">Animais disponíveis</a></li>
+      <li><a class="menuItem" href="#">Sobre a FindAFriend</a></li>
+      <li><a class="menuItem" href="#">contato</a></li>
+    </ul>
+    <button class="hamburger">
+      <img 
+        class="menuIcon" 
+        src="/assets/open-menu.svg" alt="">
+      <img
+        class="closeIcon" 
+        src="/assets/close-menu.svg" alt="">
+    </button>
+    </header>
+    <main>
+      <img
+        class="friends"
+        src="/assets/friends.svg"
+        alt="fotos do perfil e contagem dos pets amigos cadastrados na cidade em que você está"
+      />
+      <img
+        class="friends-desktop"
+        src="/assets/friends-desktop.svg"
+        alt="fotos do perfil e contagem dos pets amigos cadastrados na cidade em que você está"
+      />
+      <h1>
+        Leve <br />
+        a felicidade <br />
+        para o seu lar
+      </h1>
+      <div id="label">
+        <p>
+          Encontre o animal de estimação ideal <br />
+          para seu estilo de vida!
+        </p>
+      </div>
+      <div class="cards">
+        <div id="card-primary"></div>
+        <div id="card-secondary"></div>
+        <div id="card-aside"></div>
+
+        <img
+          id="dog"
+          src="/assets/dog.svg"
+          alt="imagem de um cachorro caramelo sentado com uma coleira vermelha"
+        />
+        <button id="join">
+          <a href="#join">
+            <span>Acesse agora</span>
+          </a>
+        </button>
+      </div>
+    </main>
+    <script src="/main.js" defer></script>
+  </body>
+</html>
