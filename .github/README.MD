@@ -28,3 +28,5 @@ A FindAFriend acredita que todo bichinho merece uma vida confortável e segura. 
 - Semântica;
 - JavaScript;
 - Consumo de API.
+
+Made by Danilo and Rocketseat.
