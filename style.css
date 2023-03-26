@@ -12,6 +12,7 @@ body {
   background: #f15156;
 }
 
+/*HOME SECTION*/
 /*HEADER*/
 
 .logo {
@@ -31,7 +32,7 @@ header {
 /*MENU*/
 
 .hamburger {
-  position: fixed;
+  position: absolute;
   z-index: 100;
   top: 1.2rem;
   right: 2rem;
@@ -143,16 +144,16 @@ h1 {
 
 #dog {
   position: absolute;
-  top: 40rem;
-  width: 23.9rem;
-  height: 27.7rem;
+  top: 30.3rem;
+  width: 25.9rem;
+  height: 40.7rem;
 }
 
 #join {
   position: absolute;
   width: 23.9rem;
   height: 5.5rem;
-  top: 60rem;
+  top: 58.8rem;
   border: 0;
 
   background: #ffffff;
@@ -177,6 +178,70 @@ h1 {
   border-radius: 2rem;
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
+
+/*ABOUT SECTION*/
+/*______________*/
+
+.about {
+  background-color: #ffffff; display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*ABOUT HEADER*/
+
+.about h2 {
+  width: 32rem;
+  height: 6.6rem;
+  margin: 7.0rem 2.0rem;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+
+  color: #0d3b66;
+}
+
+/*ABOUT BOX-CONTENT*/
+
+#box-content-1,
+#box-content-2,
+#box-content-3 {
+  box-sizing: border-box;
+  width: 32.0rem;
+  height: 19.7rem;
+
+  background: #fdeced80;
+  border: 1px solid #f151561c;
+  border-radius: 20px;
+  margin: 0 2.0rem 1.0rem;
+}
+
+#box-content-1 img,
+#box-content-2 img,
+#box-content-3 img {
+  padding: 3.0rem 0 0 1.3rem;
+}
+
+.about p {
+  width: 22.3rem;
+  height: 9.1rem;
+  margin: 2.6rem 6.7rem 3.0rem 3.0rem;
+
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.about b {
+  font-weight: 800;
+  color: #000000;
+}
+
 
 /*DESKTOP*/
 
