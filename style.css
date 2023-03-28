@@ -2,14 +2,16 @@
   margin: 0;
   font-family: "Nunito", sans-serif;
   color: #ffffff;
+  box-sizing: border-box;
 }
 
 :root {
   font-size: 62.5%;
+  --bg-primary: #f15156;
 }
 
 body {
-  background: #f15156;
+  background: var(--bg-primary);
 }
 
 /*HOME SECTION*/
@@ -142,6 +144,16 @@ h1 {
   justify-content: center;
 }
 
+#card-primary {
+  width: 27.9rem;
+  height: 22.7rem;
+  margin-bottom: 4.8rem;
+
+  background: linear-gradient(153.09deg, #f36a6f 17.23%, #e44449 73.77%);
+  border-radius: 2rem;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
 #dog {
   position: absolute;
   top: 30.3rem;
@@ -169,21 +181,11 @@ h1 {
   color: #0d3b66;
 }
 
-#card-primary {
-  width: 27.9rem;
-  height: 22.7rem;
-  margin-bottom: 4.8rem;
-
-  background: linear-gradient(153.09deg, #f36a6f 17.23%, #e44449 73.77%);
-  border-radius: 2rem;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-}
-
 /*ABOUT SECTION*/
-/*______________*/
 
 .about {
-  background-color: #ffffff; display: flex;
+  background-color: #ffffff;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -194,7 +196,7 @@ h1 {
 .about h2 {
   width: 32rem;
   height: 6.6rem;
-  margin: 7.0rem 2.0rem;
+  margin: 7rem 2rem;
 
   font-weight: 700;
   font-size: 30px;
@@ -210,25 +212,25 @@ h1 {
 #box-content-2,
 #box-content-3 {
   box-sizing: border-box;
-  width: 32.0rem;
+  width: 32rem;
   height: 19.7rem;
 
   background: #fdeced80;
   border: 1px solid #f151561c;
   border-radius: 20px;
-  margin: 0 2.0rem 1.0rem;
+  margin: 0 2rem 1rem;
 }
 
 #box-content-1 img,
 #box-content-2 img,
 #box-content-3 img {
-  padding: 3.0rem 0 0 1.3rem;
+  padding: 3rem 0 0 1.3rem;
 }
 
 .about p {
   width: 22.3rem;
   height: 9.1rem;
-  margin: 2.6rem 6.7rem 3.0rem 3.0rem;
+  margin: 2.6rem 6.7rem 3rem 3rem;
 
   font-weight: 400;
   font-size: 1.4rem;
@@ -242,6 +244,15 @@ h1 {
   color: #000000;
 }
 
+/*ABOUT FRIENDS-MAP*/
+#friends-map img {
+position: absolute;
+background-color: #ffffff;
+width: 43.0rem;
+height: 34.8rem;
+left: 0px;
+top: 158rem;
+}
 
 /*DESKTOP*/
 
@@ -328,10 +339,6 @@ h1 {
     color: #ffffff;
   }
 
-  #join span {
-    font-size: 2rem;
-  }
-
   #dog {
     position: absolute;
     width: 40.4rem;
@@ -369,6 +376,10 @@ h1 {
     margin-right: 0;
     background: #e44449;
     border-radius: 2rem 0 0 2rem;
+  }
+
+  #join span {
+    font-size: 2rem;
   }
 
   #join {
