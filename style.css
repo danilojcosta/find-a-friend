@@ -28,7 +28,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem;  
 }
 
 /*MENU*/
@@ -188,7 +188,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
 }
 
 /*ABOUT HEADER*/
@@ -245,13 +245,10 @@ h1 {
 }
 
 /*ABOUT FRIENDS-MAP*/
-#friends-map img {
-position: absolute;
+#friends-map{
 background-color: #ffffff;
-width: 43.0rem;
-height: 34.8rem;
-left: 0px;
-top: 158rem;
+width: 100%;
+height: auto;
 }
 
 /*DESKTOP*/
