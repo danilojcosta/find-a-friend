@@ -110,13 +110,14 @@ main {
 }
 
 .home {
-  margin-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
 }
 
 .friends {
   height: 5.1rem;
   width: 16.7rem;
-  margin: 5.2rem 2rem 3.5rem;
+  margin: 3.2rem 2rem 3.5rem;
 }
 
 .friends-desktop {
@@ -160,7 +161,7 @@ h1 {
 
 #dog {
   position: absolute;
-  top: 30.3rem;
+  top: 32.3rem;
   width: 25.9rem;
   height: 40.7rem;
 }
@@ -169,7 +170,7 @@ h1 {
   position: absolute;
   width: 23.9rem;
   height: 5.5rem;
-  top: 58.8rem;
+  top: 60.8rem;
   border: 0;
 
   background: #ffffff;
@@ -192,7 +193,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: left;
+  align-items: center;
 }
 
 /*ABOUT HEADER*/
@@ -215,7 +216,6 @@ h1 {
 #box-content-1,
 #box-content-2,
 #box-content-3 {
-  box-sizing: border-box;
   width: 32rem;
   height: 19.7rem;
 
@@ -249,10 +249,20 @@ h1 {
 }
 
 /*ABOUT FRIENDS-MAP*/
-#friends-map{
-background-color: #ffffff;
-width: 100%;
-height: auto;
+#friends-map {
+  position: absolute;
+  top: 162rem;
+  left: 0;
+
+  width: 100%;
+  height: auto;
+}
+
+#bg-friends-map {
+  width: 40rem;
+  height: 40rem;
+  margin-top: 7rem;
+  background-color: #fdeced80;
 }
 
 /*DESKTOP*/
