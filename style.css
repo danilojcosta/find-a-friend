@@ -37,7 +37,7 @@ header {
   position: fixed;
   z-index: 100;
   top: 1.2rem;
-  right: 7rem;
+  right: 2rem;
   padding: 0.3rem;
   border: 0;
   border-radius: 0.8rem;
@@ -79,17 +79,17 @@ header {
 
 .showMenu {
   transform: translateY(0);
-  width: 36rem;
-  height: 23rem;
-  padding: 7.9rem 2.5rem 0;
+  width: 40rem;
+  height: 37rem;
+  padding: 7.2rem 2.5rem 0;
 
   border-radius: 0 0 2rem 2rem;
 }
 
 #line {
   position: absolute;
-  width: 27.2rem;
-  height: 0px;
+  width: 30rem;
+  height: 0;
 
   opacity: 0.2;
   border: 1px solid #ffffff;
@@ -99,7 +99,7 @@ header {
   font-size: 18px;
   line-height: 110%;
   letter-spacing: -0.02em;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 /*MAIN*/
@@ -196,7 +196,7 @@ h1 {
 .about h2 {
   width: 35rem;
   height: 9rem;
-  margin: 7rem 2rem;
+  margin: 7rem 2rem 2rem;
 
   font-weight: 700;
   font-size: 3.5rem;
