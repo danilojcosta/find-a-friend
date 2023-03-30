@@ -109,6 +109,10 @@ main {
   flex-direction: column;
 }
 
+.home {
+  margin-bottom: 3rem;
+}
+
 .friends {
   height: 5.1rem;
   width: 16.7rem;
