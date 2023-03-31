@@ -80,7 +80,7 @@ header {
 .showMenu {
   transform: translateY(0);
   width: 40rem;
-  height: 37rem;
+  height: 38rem;
   padding: 7.2rem 2.5rem 0;
 
   border-radius: 0 0 2rem 2rem;
@@ -96,7 +96,7 @@ header {
 }
 
 .showMenu li {
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 110%;
   letter-spacing: -0.02em;
   margin-top: 3rem;
@@ -276,8 +276,18 @@ h1 {
   }
 
   header {
-    margin: 7rem 10.4rem 4.8rem 11.3rem;
-    padding: 0;
+    position: fixed;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15rem;
+
+    padding: 1rem;
+
+    width: 100%;
+    height: auto;
     background-color: #f15156;
   }
 
@@ -287,33 +297,34 @@ h1 {
   }
 
   .hamburger {
-    position: absolute;
-    top: 7.5rem;
-    left: 85rem;
-    width: 4.5rem;
-    border: 0;
-    border-radius: 0.8rem;
-    background: white;
-    cursor: pointer;
+    display: none;
   }
 
-  .showMenu {
-    position: absolute;
-    width: 48rem;
-    height: 34rem;
-    left: 80.5rem;
-    top: 3.9rem;
-    padding-left: 4.5rem;
-    padding-top: 15rem;
-    border-radius: 2rem;
-  }
+  .menu {
+    position: relative;
+    top: 4.1rem;
 
-  .showMenu li {
-    font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
+
+    margin-right: 4rem;
+
+    font-size: 1.7rem;
+    width: auto;
+    height: auto;
+
+    background-color: var(--bg-primary);
   }
 
   #line {
     display: none;
+  }
+
+  .home {
+    margin-top: 10rem;
   }
 
   .friends {
@@ -361,9 +372,9 @@ h1 {
   #card-primary {
     position: absolute;
     width: 55rem;
-    height: 49rem;
+    height: 43rem;
     left: 80.5rem;
-    top: 3.9rem;
+    top: 9.8rem;
   }
 
   #card-secondary {
@@ -380,9 +391,9 @@ h1 {
   #card-aside {
     position: absolute;
     width: 13.5rem;
-    height: 64.1rem;
+    height: 57.9rem;
     left: 137.5rem;
-    top: 3.9rem;
+    top: 9.8rem;
 
     margin-right: 0;
     background: #e44449;
