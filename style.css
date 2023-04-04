@@ -8,10 +8,7 @@
 :root {
   font-size: 62.5%;
   --bg-primary: #f15156;
-}
-
-body {
-  background: var(--bg-primary);
+  --bg-secondary: #ffffff;
 }
 
 /*HOME SECTION*/
@@ -66,7 +63,7 @@ header {
 
 .menu a {
   text-decoration: none;
-  color: #d4d0d0;
+  color: #eeeeee;
 }
 
 .menu a:hover {
@@ -107,6 +104,7 @@ header {
 main {
   display: flex;
   flex-direction: column;
+  background-color: var(--bg-primary);
 }
 
 .home {
@@ -142,9 +140,9 @@ h1 {
   margin: 0;
 }
 
-/*CARDS*/
+/*CARDS-HOME*/
 
-.cards {
+.cards-home {
   display: flex;
   justify-content: center;
 }
@@ -166,7 +164,7 @@ h1 {
   height: 40.7rem;
 }
 
-#join {
+#join-button {
   position: absolute;
   width: 23.9rem;
   height: 5.5rem;
@@ -177,7 +175,7 @@ h1 {
   border-radius: 8px;
 }
 
-#join span {
+#join-button span {
   font-weight: 800;
   font-size: 1.5rem;
   line-height: 1.5rem;
@@ -213,9 +211,9 @@ h1 {
 
 /*ABOUT BOX-CONTENT*/
 
-#box-content-1,
-#box-content-2,
-#box-content-3 {
+#card-01,
+#card-02,
+#card-03 {
   width: 32rem;
   height: 19.7rem;
 
@@ -225,9 +223,9 @@ h1 {
   margin: 0 2rem 1rem;
 }
 
-#box-content-1 img,
-#box-content-2 img,
-#box-content-3 img {
+#card-01 img,
+#card-02 img,
+#card-03 img {
   padding: 3rem 0 0 1.3rem;
 }
 
@@ -258,6 +256,10 @@ h1 {
   height: auto;
 }
 
+#friends-map-desktop {
+  display: none;
+}
+
 #bg-friends-map {
   width: 40rem;
   height: 40rem;
@@ -267,13 +269,7 @@ h1 {
 
 /*DESKTOP*/
 
-@media (min-width: 40em) {
-  main {
-    max-width: 1440px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0;
-  }
+@media (min-width: 50em) {
 
   header {
     position: fixed;
@@ -292,8 +288,8 @@ h1 {
   }
 
   .logo {
-    width: 17.7rem;
-    height: 4.6rem;
+    width: 15rem;
+    height: 4rem;
   }
 
   .hamburger {
@@ -302,7 +298,7 @@ h1 {
 
   .menu {
     position: relative;
-    top: 4.1rem;
+    top: 4rem;
 
     display: flex;
     flex-direction: row;
@@ -312,7 +308,7 @@ h1 {
 
     margin-right: 4rem;
 
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     width: auto;
     height: auto;
 
@@ -323,66 +319,68 @@ h1 {
     display: none;
   }
 
+  /*FIRST PAGE - HOME SECTION*/
+
+  main {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
   .home {
     margin-top: 10rem;
+    background-color: var(--bg-primary);
   }
 
   .friends {
-    margin: 0;
-    width: 0;
-    height: 0;
+    display: none;
   }
 
   .friends-desktop {
-    width: 29.9rem;
-    height: 3.4rem;
-    margin-left: 9.5rem;
+    width: 29rem;
+    height: 3.5rem;
+    margin-left: 8rem;
   }
 
   h1 {
-    margin: 5rem 10.4rem 7.1rem 11.3rem;
+    margin: 5rem 0 3rem 9rem;
 
-    width: 51.9rem;
-    height: 23.7rem;
+    width: 45rem;
+    height: 23rem;
 
     font-weight: 700;
-    font-size: 7rem;
+    font-size: 5.5rem;
     line-height: 110%;
     letter-spacing: -0.02em;
   }
 
   #label p {
-    width: 40.7rem;
-    height: 6.8rem;
-    margin: 0 0 5rem 12.2rem;
+    width: 40rem;
+    height: 6rem;
+    margin: 0 0 5rem 9.5rem;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.7rem;
     line-height: 3.4rem;
     color: #ffffff;
   }
 
-  #dog {
-    position: absolute;
-    width: 40.4rem;
-    height: 55.2rem;
-    left: 87.6rem;
-    top: 1rem;
-  }
+  /*CARDS-HOME*/
 
   #card-primary {
     position: absolute;
-    width: 55rem;
-    height: 43rem;
-    left: 80.5rem;
-    top: 9.8rem;
+    width: 50rem;
+    height: 30rem;
+    left: 67rem;
+    top: 15rem;
   }
 
   #card-secondary {
     position: absolute;
-    width: 55rem;
-    height: 13rem;
-    left: 80.5rem;
-    top: 54.9rem;
+    width: 50rem;
+    height: 10rem;
+    left: 67rem;
+    top: 47rem;
 
     background: #e44449;
     border-radius: 2rem;
@@ -390,29 +388,135 @@ h1 {
 
   #card-aside {
     position: absolute;
-    width: 13.5rem;
-    height: 57.9rem;
-    left: 137.5rem;
-    top: 9.8rem;
+    width: 15rem;
+    height: 42rem;
+    left: 119rem;
+    top: 15rem;
 
     margin-right: 0;
     background: #e44449;
     border-radius: 2rem 0 0 2rem;
   }
 
-  #join span {
-    font-size: 2rem;
+  #dog {
+    position: absolute;
+    width: 31.5rem;
+    height: 50rem;
+    left: 75rem;
+    top: 1rem;
   }
 
-  #join {
+  #join-button {
     position: absolute;
-    width: 49.2rem;
-    height: 7.2rem;
-    left: 83.5rem;
-    top: 57.9rem;
+    width: 40rem;
+    height: 6rem;
+    left: 72.5rem;
+    top: 49rem;
     border: 0;
 
     background: #ffffff;
     border-radius: 8px;
+  }
+
+  #join-button span {
+    font-size: 2rem;
+  }
+
+  /*SECOND PAGE - SECTION ABOUT*/
+
+  .about {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--bg-secondary);
+
+    width: 100%;
+  }
+
+  .about h2 {
+    font-size: 4rem;
+    position: absolute;
+    width: 40.5rem;
+    height: 10.6rem;
+    left: 80rem;
+    top: 88rem;
+  }
+
+  #friends-map {
+    display: none;
+  }
+
+  #friends-map-desktop {
+    display: flex;
+    position: absolute;
+    width: 63.6rem;
+    height: 70.6rem;
+    left: 5rem;
+    top: 99rem;
+  }
+
+  #bg-friends-map {
+    box-sizing: border-box;
+
+    position: relative;
+    width: 64rem;
+    height: 75rem;
+    left: 5rem;
+    top: 7rem;
+
+    background: linear-gradient(180deg, #FDECED 0%, rgba(253, 236, 237, 0) 100%);
+    opacity: 0.5;
+    border-radius: 20px;
+  }
+
+  /*CARDS-ABOUT*/
+
+  .cards-about {
+    position: absolute;
+    width: 60rem;
+    height: 45rem;
+    left: 70rem;
+    top: 110rem;
+  }
+
+  #card-01 {
+    position: absolute;
+    width: 28rem;
+    height: 19rem;
+    top: 0rem;
+  }
+
+  #card-02 {
+    position: absolute;
+    width: 28rem;
+    height: 19rem;
+    left: 30rem;
+    top: 0rem;
+  }
+
+  #card-03 {
+    display: flex;
+    position: absolute;
+    width: 58rem;
+    height: 25rem;
+    top: 21rem;
+
+    justify-content: space-around;
+    flex-direction: column;
+
+  }
+
+  #card-01 img,
+  #card-02 img,
+  #card-03 img {
+    width: 3rem;
+    padding: 0;
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+
+  #card-03 p {
+    width: 50rem;
   }
 }
