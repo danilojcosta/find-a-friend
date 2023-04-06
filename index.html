@@ -26,11 +26,11 @@
 
       <ul class="menu">
         <div id="line"></div>
-        <li><a class="menuItem" href="#">Home</a></li>
-        <li><a class="menuItem" href="#">Sobre o app</a></li>
-        <li><a class="menuItem" href="#">Animais disponíveis</a></li>
-        <li><a class="menuItem" href="#">Sobre a FindAFriend</a></li>
-        <li><a class="menuItem" href="#">Contato</a></li>
+        <li><a class="menuItem" href="#home">Home</a></li>
+        <li><a class="menuItem" href="#about">Sobre o app</a></li>
+        <li><a class="menuItem" href="#friends">Animais disponíveis</a></li>
+        <li><a class="menuItem" href="#org">Sobre a FindAFriend</a></li>
+        <li><a class="menuItem" href="#contact">Contato</a></li>
       </ul>
 
       <button class="hamburger">
@@ -41,16 +41,16 @@
     </header>
     <main>
       
-      <div class="home">
+      <section id="home">
 
         <img
-          class="friends"
-          src="./assets/friends.svg"
+          id="friends-img-app"
+          src="./assets/friends-img-app.svg"
           alt="fotos do perfil e contagem dos pets amigos cadastrados na cidade em que você está"
         />
         <img
-          class="friends-desktop"
-          src="./assets/friends-desktop.svg"
+          id="friends-img-desktop"
+          src="./assets/friends-img-desktop.svg"
           alt="fotos do perfil e contagem dos pets amigos cadastrados na cidade em que você está"
         />
         
@@ -60,12 +60,12 @@
           para o seu lar
         </h1>
 
-        <div id="label">
+        <label>
           <p>
             Encontre o animal de estimação ideal <br />
             para seu estilo de vida!
           </p>
-        </div>
+        </label>
 
         <div class="cards-home">
 
@@ -79,16 +79,16 @@
             alt="imagem de um cachorro caramelo sentado com uma coleira vermelha"
           />
 
-          <button id="join-button">
-            <a href="#join">
+          <button class="join-button">
+            <a href="#join-button">
               <span>Acesse agora</span>
             </a>
           </button>
 
         </div>
-      </div>
+      </section>
 
-      <div class="about">
+      <section id="about">
         <h2>Um app não, uma caixinha de amigos...</h2>
 
         <div class="cards-about">
@@ -141,7 +141,20 @@
         />
         <div id="bg-friends-map"></div>
 
-      </div>
+      </section>
+
+      <section id="friends">
+
+        <div id="bg-friends-section"></div>
+
+        <h2>
+          Há muitos <br> amigos esperando por você!
+        </h2>
+
+        <p></p>
+         
+      </section>
+
     </main>
 
     <script src="./main.js" defer></script>

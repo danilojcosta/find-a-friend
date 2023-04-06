@@ -107,18 +107,18 @@ main {
   background-color: var(--bg-primary);
 }
 
-.home {
+#home {
   padding-top: 3rem;
   padding-bottom: 6rem;
 }
 
-.friends {
+#friends-img-app {
   height: 5.1rem;
   width: 16.7rem;
   margin: 3.2rem 2rem 3.5rem;
 }
 
-.friends-desktop {
+#friends-img-desktop {
   margin: 0;
   width: 0;
   height: 0;
@@ -135,7 +135,7 @@ h1 {
   color: #ffffff;
 }
 
-#label p {
+#home label p {
   color: #f15156;
   margin: 0;
 }
@@ -164,7 +164,7 @@ h1 {
   height: 40.7rem;
 }
 
-#join-button {
+.join-button {
   position: absolute;
   width: 23.9rem;
   height: 5.5rem;
@@ -175,7 +175,7 @@ h1 {
   border-radius: 8px;
 }
 
-#join-button span {
+.join-button span {
   font-weight: 800;
   font-size: 1.5rem;
   line-height: 1.5rem;
@@ -186,7 +186,7 @@ h1 {
 
 /*ABOUT SECTION*/
 
-.about {
+#about {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -196,7 +196,7 @@ h1 {
 
 /*ABOUT HEADER*/
 
-.about h2 {
+#about h2 {
   width: 35rem;
   height: 9rem;
   margin: 7rem 2rem 2rem;
@@ -229,7 +229,7 @@ h1 {
   padding: 3rem 0 0 1.3rem;
 }
 
-.about p {
+#about p {
   width: 22.3rem;
   height: 9.1rem;
   margin: 2.6rem 6.7rem 3rem 3rem;
@@ -241,7 +241,7 @@ h1 {
   color: #000000;
 }
 
-.about b {
+#about b {
   font-weight: 800;
   color: #000000;
 }
@@ -269,7 +269,7 @@ h1 {
 
 /*DESKTOP*/
 
-@media (min-width: 50em) {
+@media (min-width: 40em) {
 
   header {
     position: fixed;
@@ -328,16 +328,16 @@ h1 {
     margin-bottom: 0;
   }
 
-  .home {
+  #home {
     margin-top: 10rem;
     background-color: var(--bg-primary);
   }
 
-  .friends {
+  #friends-img-app {
     display: none;
   }
 
-  .friends-desktop {
+  #friends-img-desktop {
     width: 29rem;
     height: 3.5rem;
     margin-left: 8rem;
@@ -355,7 +355,7 @@ h1 {
     letter-spacing: -0.02em;
   }
 
-  #label p {
+  #home label p {
     width: 40rem;
     height: 6rem;
     margin: 0 0 5rem 9.5rem;
@@ -406,7 +406,7 @@ h1 {
     top: 1rem;
   }
 
-  #join-button {
+  .join-button {
     position: absolute;
     width: 40rem;
     height: 6rem;
@@ -418,13 +418,13 @@ h1 {
     border-radius: 8px;
   }
 
-  #join-button span {
+  .join-button span {
     font-size: 2rem;
   }
 
   /*SECOND PAGE - SECTION ABOUT*/
 
-  .about {
+  #about {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -434,7 +434,7 @@ h1 {
     width: 100%;
   }
 
-  .about h2 {
+  #about h2 {
     font-size: 4rem;
     position: absolute;
     width: 40.5rem;
