@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap"
       rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
 
     <link rel="stylesheet" href="style.css" />
@@ -19,9 +24,10 @@
     <header>
       <a href="#">
         <img
-        class="logo"
-        src="./assets/logo.svg"
-        alt="logotipo com um rosto de cachorro desenhado dentro de um circulo"/>
+          class="logo"
+          src="./assets/logo.svg"
+          alt="logotipo com um rosto de cachorro desenhado dentro de um circulo"
+        />
       </a>
 
       <ul class="menu">
@@ -37,12 +43,9 @@
         <img class="menuIcon" src="./assets/open-menu.svg" alt="" />
         <img class="closeIcon" src="./assets/close-menu.svg" alt="" />
       </button>
-
     </header>
     <main>
-      
       <section id="home">
-
         <img
           id="friends-img-app"
           src="./assets/friends-img-app.svg"
@@ -53,7 +56,7 @@
           src="./assets/friends-img-desktop.svg"
           alt="fotos do perfil e contagem dos pets amigos cadastrados na cidade em que você está"
         />
-        
+
         <h1>
           Leve <br />
           a felicidade <br />
@@ -68,7 +71,6 @@
         </label>
 
         <div class="cards-home">
-
           <div id="card-primary"></div>
           <div id="card-secondary"></div>
           <div id="card-aside"></div>
@@ -84,7 +86,6 @@
               <span>Acesse agora</span>
             </a>
           </button>
-
         </div>
       </section>
 
@@ -92,15 +93,14 @@
         <h2>Um app não, uma caixinha de amigos...</h2>
 
         <div class="cards-about">
-
           <div id="card-01">
             <img
               src="./assets/icon-dog.svg"
               alt="icone pequeno de um cachorro amarelo andando"
             />
             <p>
-              O <b>FindAFriend</b> é um produto desenvolvido para você encontrar o
-              animal de estimação ideal ao seu estilo de vida!
+              O <b>FindAFriend</b> é um produto desenvolvido para você encontrar
+              o animal de estimação ideal ao seu estilo de vida!
             </p>
           </div>
 
@@ -118,45 +118,81 @@
           </div>
 
           <div id="card-03">
-            <img 
-              src="./assets/icon-dog-walker.svg" 
-              alt="icone de um cachorro andando com coleira" />
+            <img
+              src="./assets/icon-dog-walker.svg"
+              alt="icone de um cachorro andando com coleira"
+            />
             <p>
               <b>Filtre os bichinhos</b> de acordo com suas preferências e
-              lifestyle. Depois é só entrar em contato com a ONG para agendar uma
-              visita e conhecer pessoalmente seu <b>match perfeito!</b>
+              lifestyle. Depois é só entrar em contato com a ONG para agendar
+              uma visita e conhecer pessoalmente seu <b>match perfeito!</b>
             </p>
           </div>
-
         </div>
 
-        <img 
-          id="friends-map" 
-          src="./assets/friends-map.svg" 
-          alt="imagem contendo os pets cadastrados para dispositivos móveis" />
-        <img 
-          id="friends-map-desktop" 
-          src="./assets/friends-map-desktop.svg" 
-          alt="imagem contendo os pets cadastrados" 
+        <img
+          id="friends-map"
+          src="./assets/friends-map.svg"
+          alt="imagem contendo os pets cadastrados para dispositivos móveis"
+        />
+        <img
+          id="friends-map-desktop"
+          src="./assets/friends-map-desktop.svg"
+          alt="imagem contendo os pets cadastrados"
         />
         <div id="bg-friends-map"></div>
-
       </section>
 
       <section id="friends">
-
         <div id="bg-friends-section"></div>
 
         <h2>
-          Há muitos <br> amigos esperando por você!
+          Há muitos <br />
+          amigos esperando por você!
         </h2>
 
-        <p></p>
-         
-      </section>
+        <p>
+          O FiendAFriend conecta pessoas que estão procurando por um animal de
+          estimação com animais que precisam de um lar amoroso. É fácil de usar
+          e você pode navegar por uma variedade de animais para encontrar aquele
+          que melhor se adapta ao seu estilo de vida e necessidades.
+        </p>
 
+        <button class="join-button-friends">
+          <a href="#join-button-friends">
+            <span>Acesse agora</span>
+          </a>
+        </button>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./assets/friends-slide-1.svg" alt="foto de um cachorro marrom e bege olhando para o céu" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/friends-slide-2.svg" alt="foto de um gato laranja com listras brancas com os olhos fechados, deitado em cima de um piso de madeira" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/friends-slide-3.svg" alt="foto de um gato caramelo com listras pretas e olhos amarelos de perfil olhando para frente" />
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+        </div>
+      </section>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./main.js" defer></script>
+    <script src="./swiper.js" defer></script>
   </body>
 </html>

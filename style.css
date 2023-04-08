@@ -247,13 +247,13 @@ h1 {
 }
 
 /*ABOUT FRIENDS-MAP*/
+
 #friends-map {
   position: absolute;
-  top: 162rem;
-  left: 0;
-
+  top: 163rem;
   width: 100%;
   height: auto;
+
 }
 
 #friends-map-desktop {
@@ -261,10 +261,109 @@ h1 {
 }
 
 #bg-friends-map {
+  top: 0;
   width: 40rem;
   height: 40rem;
   margin-top: 7rem;
   background-color: #fdeced80;
+}
+
+/*----------------*/
+/*FRIENDS SECTION*/
+
+#friends {
+  background-color: var(--bg-secondary);
+}
+
+#bg-friends-section { 
+  width: 35rem;
+  height: 82rem;
+
+  margin: 3rem;
+
+  background: #F15156;
+  border-radius: 20px;
+}
+
+#friends h2 {
+  position: absolute;
+  width: 25rem;
+  height: 8rem;
+  left: 8rem;
+  top: 220rem;
+
+  font-size: 3rem;
+  line-height: 90%;
+
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #F4D35E;
+}
+
+#friends p {
+  position: absolute;
+  width: 26rem;
+  height: 15rem;
+  left: 8rem;
+  top: 232rem;
+
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 110%;
+
+  letter-spacing: -0.02em;
+
+  color: #FFFFFF;
+}
+
+.join-button-friends {
+  position: absolute;
+  width: 26rem;
+  height: 5.5rem;
+  left: 8rem;
+  top: 248rem;
+  border: 0;
+
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.join-button-friends span {
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+
+  color: #0d3b66;
+}
+
+.swiper {
+  position: absolute;
+  top: 257rem;
+  left: 8rem;
+  width: 35rem;
+  height: 25rem;
+}
+
+.swiper-slide img {
+  width: 25rem;
+  height: 25rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-slide {
+    flex-shrink: unset;
+    margin-left: 1rem;
+    margin-right: 1rem;
+} 
+
+.swiper-pagination {
+  display: none;
 }
 
 /*DESKTOP*/
