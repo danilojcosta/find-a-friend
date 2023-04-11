@@ -268,8 +268,9 @@ h1 {
   background-color: #fdeced80;
 }
 
-/*----------------*/
-/*FRIENDS SECTION*/
+/*-----------------*/
+/* SECTION FRIENDS */
+/*-----------------*/
 
 #friends {
   background-color: var(--bg-secondary);
@@ -338,7 +339,7 @@ h1 {
   color: #0d3b66;
 }
 
-.swiper {
+#friends .swiper {
   position: absolute;
   top: 257rem;
   left: 8rem;
@@ -366,7 +367,68 @@ h1 {
   display: none;
 }
 
-/*DESKTOP*/
+/*-------------*/
+/* SECTION ORG */
+/*-------------*/
+
+#org {
+  background-color: var(--bg-secondary);
+}
+
+#bg-org-section { 
+  width: 35rem;
+  height: 82rem;
+
+  margin: 3rem;
+
+  border-radius: 20px;
+}
+
+#org h2 {
+  position: absolute;
+  width: 40rem;
+  height: 8rem;
+  left: 8rem;
+  top: 300rem;
+
+  font-size: 3rem;
+  line-height: 110%;
+
+  text-align: left;
+  letter-spacing: -0.02em;
+
+  color: #0D3B66;
+}
+
+#org p {
+  position: absolute;
+  width: 26rem;
+  height: 15rem;
+  left: 8rem;
+  top: 232rem;
+
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 110%;
+
+  letter-spacing: -0.02em;
+
+  color: #FFFFFF;
+}
+
+#org .swiper {
+  position: absolute;
+  top: 257rem;
+  left: 8rem;
+  width: 35rem;
+  height: 25rem;
+}
+
+
+/*--------------------*/
+/*   LAYOUT DESKTOP   */
+/*--------------------*/
+
 
 @media (min-width: 40em) {
 
@@ -418,7 +480,9 @@ h1 {
     display: none;
   }
 
-  /*FIRST PAGE - HOME SECTION*/
+  /*--------------*/
+  /* SECTION HOME */
+  /*--------------*/
 
   main {
     max-width: 1440px;
@@ -521,7 +585,9 @@ h1 {
     font-size: 2rem;
   }
 
-  /*SECOND PAGE - SECTION ABOUT*/
+  /*---------------*/
+  /* SECTION ABOUT */
+  /*---------------*/
 
   #about {
     display: flex;
@@ -603,7 +669,6 @@ h1 {
 
     justify-content: space-around;
     flex-direction: column;
-
   }
 
   #card-01 img,
@@ -619,3 +684,4 @@ h1 {
     width: 50rem;
   }
 }
+
