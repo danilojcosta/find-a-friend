@@ -197,7 +197,7 @@ h1 {
 /*ABOUT HEADER*/
 
 #about h2 {
-  width: 35rem;
+  width: 32.5rem;
   height: 9rem;
   margin: 7rem 2rem 2rem;
 
@@ -280,7 +280,7 @@ h1 {
   width: 35rem;
   height: 82rem;
 
-  margin: 3rem;
+  margin: 2rem;
 
   background: #F15156;
   border-radius: 20px;
@@ -290,7 +290,7 @@ h1 {
   position: absolute;
   width: 25rem;
   height: 8rem;
-  left: 8rem;
+  left: 7rem;
   top: 220rem;
 
   font-size: 3rem;
@@ -306,7 +306,7 @@ h1 {
   position: absolute;
   width: 26rem;
   height: 15rem;
-  left: 8rem;
+  left: 7rem;
   top: 232rem;
 
   font-weight: 400;
@@ -322,7 +322,7 @@ h1 {
   position: absolute;
   width: 26rem;
   height: 5.5rem;
-  left: 8rem;
+  left: 7rem;
   top: 248rem;
   border: 0;
 
@@ -342,8 +342,8 @@ h1 {
 #friends .swiper {
   position: absolute;
   top: 257rem;
-  left: 8rem;
-  width: 35rem;
+  left: 6rem;
+  width: 31rem;
   height: 25rem;
 }
 
@@ -375,21 +375,10 @@ h1 {
   background-color: var(--bg-secondary);
 }
 
-#bg-org-section { 
-  width: 35rem;
-  height: 82rem;
-
-  margin: 3rem;
-
-  border-radius: 20px;
-}
-
 #org h2 {
-  position: absolute;
-  width: 40rem;
+  width: 20rem;
   height: 8rem;
-  left: 8rem;
-  top: 300rem;
+  margin: 5rem 2rem 2rem;
 
   font-size: 3rem;
   line-height: 110%;
@@ -402,13 +391,68 @@ h1 {
 
 #org p {
   position: absolute;
-  width: 26rem;
-  height: 15rem;
-  left: 8rem;
-  top: 232rem;
+  width: 32rem;
+  height: 16rem;
+  margin-left: 2rem;
 
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  line-height: 110%;
+
+  letter-spacing: -0.02em;
+
+  color: #0D3B66;
+}
+
+#org .swiper {
+  position: absolute;
+  top: 330rem;
+  width: 35rem;
+  height: 25rem;
+}
+
+/*-----------------*/
+/* SECTION CONTACT */
+/*-----------------*/
+
+#bg-contact {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 34rem;
+  height: 30rem;
+  left: 2rem;
+  top: 360rem;
+
+  background: #0D3B66;
+  border-radius: 10px;
+}
+
+#card-contact-1 {
+  position: absolute;
+  width: 22rem;
+  height: 6.2rem;
+  left: 2.5rem;
+  top: 360rem;
+}
+
+#card-contact-2 {
+  position: absolute;
+  width: 19.4rem;
+  height: 13.6rem;
+  left: 16.5rem;
+  top: 359rem;
+}
+
+#contact h2 {
+  position: absolute;
+  width: 15rem;
+  height: 9rem;
+  left: 5rem;
+  top: 370rem;
+
+  font-weight: 700;
+  font-size: 3rem;
   line-height: 110%;
 
   letter-spacing: -0.02em;
@@ -416,12 +460,58 @@ h1 {
   color: #FFFFFF;
 }
 
-#org .swiper {
+#contact a img {
   position: absolute;
-  top: 257rem;
-  left: 8rem;
-  width: 35rem;
-  height: 25rem;
+  width: 2rem;
+  height: 2rem;
+  left: 5rem;
+  top: 382.7rem;
+}
+
+#contact label {
+  position: absolute;
+  width: 19rem;
+  height: 1.5rem;
+  left: 7.8rem;
+  top: 383rem;
+
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 110%;
+
+  letter-spacing: -0.02em;
+
+  color: #F4D35E;
+}
+
+/*-----------------*/
+/* SECTION FOOTER */
+/*-----------------*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  position: absolute;
+  top: 395rem;
+
+  width: 100%;
+  height: 17rem;
+
+  background-color: var(--bg-primary);
+}
+
+footer #logo-mobile {
+  margin: 4rem 18rem 5rem;
+}
+
+footer #logo-desktop {
+  display: none;
+}
+
+footer h3 {
+  text-align: center;
 }
 
 
@@ -683,5 +773,31 @@ h1 {
   #card-03 p {
     width: 50rem;
   }
-}
 
+  /*-------------------*/
+  /*  SECTION FRIENDS  */
+  /*-------------------*/
+
+  #bg-friends-section {
+    position: absolute;
+    width: 121.6rem;
+    height: 62.8rem;
+    left: 3rem;
+    top: 320rem;
+
+    background: #F15156;
+    border-radius: 20px;
+  }
+
+  /*--------------*/
+  /*  SECTION ORG */
+  /*--------------*/
+
+
+
+  /*-------------------*/
+  /*  SECTION CONTACT  */
+  /*-------------------*/
+
+
+}
