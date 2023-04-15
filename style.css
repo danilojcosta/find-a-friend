@@ -783,12 +783,71 @@ footer h3 {
     width: 121.6rem;
     height: 62.8rem;
     left: 3rem;
-    top: 320rem;
+    top: 170rem;
 
     background: #F15156;
     border-radius: 20px;
   }
 
+  #friends h2 {
+    position: absolute;
+    width: 41.6rem;
+    height: 12.9rem;
+    left: 14rem;
+    top: 180rem;
+    text-align: left;
+      
+    font-size: 4.8rem;
+    line-height: 90%;
+
+    letter-spacing: -0.02em;
+  }
+
+  #friends p {
+    position: absolute;
+    width: 50rem;
+    height: 12rem;
+    left: 65rem;
+    top: 180rem;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 110%;
+
+    letter-spacing: -0.02em;
+  }
+
+  .join-button-friends {
+    position: absolute;
+    width: 23.1rem;
+    height: 7.2rem;
+    left: 14rem;
+    top: 207rem;
+  }
+
+  #friends .swiper {
+    position: absolute;
+    width: 38.4rem;
+    height: 26.1rem;
+    left: 73.6rem;
+    top: 195rem;
+  }
+
+  #friends .swiper-pagination {
+    position: absolute;
+    width: 3rem;
+    height: 1rem;
+    left: 73rem;
+    top: 220rem;
+  }
+
+  #friends .swiper-button-prev {
+
+  }
+
+  #friends .swiper-button-next {
+
+  }
   /*--------------*/
   /*  SECTION ORG */
   /*--------------*/
