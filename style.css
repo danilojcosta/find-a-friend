@@ -411,6 +411,18 @@ h1 {
   height: 25rem;
 }
 
+#org-cards-desktop {
+  position: absolute;
+  top: 265rem;
+  left: 12rem;
+}
+
+#org-cards-desktop img + img {
+  margin: 0.5rem;
+}
+
+
+
 /*-----------------*/
 /* SECTION CONTACT */
 /*-----------------*/
