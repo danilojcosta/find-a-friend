@@ -262,8 +262,8 @@ h1 {
 
 #bg-friends-map {
   top: 0;
-  width: 40rem;
-  height: 40rem;
+  width: 50rem;
+  height: 50rem;
   margin-top: 7rem;
   background-color: #fdeced80;
 }
@@ -278,7 +278,7 @@ h1 {
 
 #bg-friends-section { 
   width: 35rem;
-  height: 82rem;
+  height: 76rem;
 
   margin: 2rem;
 
@@ -291,7 +291,7 @@ h1 {
   width: 25rem;
   height: 8rem;
   left: 7rem;
-  top: 220rem;
+  top: 225rem;
 
   font-size: 3rem;
   line-height: 90%;
@@ -307,7 +307,7 @@ h1 {
   width: 26rem;
   height: 15rem;
   left: 7rem;
-  top: 232rem;
+  top: 237rem;
 
   font-weight: 400;
   font-size: 1.6rem;
@@ -323,7 +323,7 @@ h1 {
   width: 26rem;
   height: 5.5rem;
   left: 7rem;
-  top: 248rem;
+  top: 255rem;
   border: 0;
 
   background: #ffffff;
@@ -341,7 +341,7 @@ h1 {
 
 #friends .swiper {
   position: absolute;
-  top: 257rem;
+  top: 262rem;
   left: 6rem;
   width: 31rem;
   height: 25rem;
@@ -412,6 +412,7 @@ h1 {
 }
 
 #org-cards-desktop {
+  display: none;
   position: absolute;
   top: 265rem;
   left: 12rem;
@@ -420,7 +421,6 @@ h1 {
 #org-cards-desktop img + img {
   margin: 0.5rem;
 }
-
 
 
 /*-----------------*/
